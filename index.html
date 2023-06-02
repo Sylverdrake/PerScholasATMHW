@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATM Practice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<!-- Full ATM -->
+        <div class="atmContainer">
+            <!-- Screen of ATM -->
+            <div class="screen">
+                <h1 class="titleScreen">Welcome to Pare O'Dee Banking System</h1>
+                <p class="screenTxt">Please use the right menu to proceed.</p>
+            </div>
+            <!-- Button Menu-->
+            <div class="btnContainer">
+                <div class="left">
+
+                    <!-- Balance Button, needs to display on the left screen-->
+                <button class="atmBtn" onclick="uploadToScreen(balance)">Check Balance</button>
+
+                    <!-- Deposit button needs 5 sub buttons that appear, 10, 25, 50, 100, and variable, max 500?-->
+                <button class="atmBtn" onclick="deposit()">Make a Deposit</button>
+            </div>
+            
+            <div class="right">
+
+                <!-- Withdraw button needs 5 sub buttons that appear, 10, 25, 50, 100, and variable, max balance-->
+                <button class="atmBtn" onclick="withdraw()">Make a Withdrawal</button>
+
+                <!-- Fast Cash Button which prompts a message which declares -100 from balance, and functions as such-->
+                <button class="atmBtn" onclick="fastcash()">Fast Cash ($100)</button>
+
+                <!-- Backs out of current screen text-->
+                <button class="atmBtn" onclick ="clearScreen()">Clear Screen</button>
+            </div>
+
+            <div class="test">
+                <!-- An ad because I thought it'd be funny-->
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F69%2F15%2Fb0%2F6915b04fd20cb0aa454f0172b4e19d74.jpg&f=1&nofb=1&ipt=29ec184fee1ec1675104968482bd76879863927329b2f28b156f0e888c952d37&ipo=images" alt="">
+            </div>
+            </div>
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>

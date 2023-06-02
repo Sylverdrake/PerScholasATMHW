@@ -1,0 +1,54 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.atmContainer {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    text-align: center;
+}
+.screen {
+    border: 1px solid;
+    height: 400px;
+    width: 500px;
+    background-color: lightblue;
+}
+.btnContainer {
+    border: 1px solid;
+    width: 200px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.right, .left {
+    /* border: solid orange; */
+    display: flex;
+    flex-direction: column;
+}
+
+.atmBtn {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+
+.test {
+    /* border: solid pink; */
+    display:flex;
+    position: relative;
+    top: 10px;
+    right: 1px;
+}
+
+img {
+    border: 1px solid;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+}
